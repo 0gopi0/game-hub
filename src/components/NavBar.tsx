@@ -1,10 +1,11 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/robo.svg";
+import ColorModeSwitch from "./ColorModeSwitch";
 const NavBar = () => {
   return (
-    <HStack>
-      <Image src={logo} p={2} boxSize="60px" borderRadius="full" />
-      <Text>NavBar</Text>
+    <HStack justifyContent="space-between" padding="10px">
+      <Image src={logo} boxSize="60px" borderRadius="10px" />
+      <ColorModeSwitch />
     </HStack>
   );
 };
