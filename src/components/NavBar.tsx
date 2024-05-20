@@ -3,7 +3,7 @@ import logo from "../assets/robo.svg";
 const NavBar = () => {
   return (
     <HStack>
-      <Image src={logo} p={2} boxSize="60px" />
+      <Image src={logo} p={2} boxSize="60px" borderRadius="full" />
       <Text>NavBar</Text>
     </HStack>
   );
