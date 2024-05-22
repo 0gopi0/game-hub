@@ -9,7 +9,12 @@ interface Props {
 const GameCard = ({ game }: Props) => {
   return (
     <Card>
-      <Image src={GetCropedImageUrl(game.background_image)} />
+      <Image
+        src={
+          GetCropedImageUrl(game.background_image) ||
+          "https://cdn-image.hipwee.com/wp-content/uploads/2016/06/hipwee-belajar-bilang-maaf-1-1-750x422.jpg"
+        }
+      />
       <CardBody>
         <Heading fontSize="2xl">{game.name}</Heading>
         <HStack justifyContent="space-between">
